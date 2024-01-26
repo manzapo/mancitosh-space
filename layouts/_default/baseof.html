@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ if .Page.Title }}{{ .Page.Title }} &middot; {{ end }}{{ .Site.Title }}</title>
+	<meta name="description" content="{{ .Site.Params.description }}">
+	<link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	{{ block "stylesheet" . }}
+		<!-- stylesheet -->
+	{{ end }}
+</head>
+
+<body>
+	{{ partial "navbar.html" . }}
+	{{ block "main" . }}
+		<!-- The part of the page that begins to differ between templates -->
+	{{ end }}
+
+	<footer class="mt-md-auto">
+		<div class="container py-3 text-body-secondary text-center">&copy; 2024 OSIM MAN 1 Ponorogo</div>
+	</footer>
+
+	<script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
+	{{ block "javascript" . }}
+		<!-- javascript -->
+	{{ end }}
+</body>
+</html>

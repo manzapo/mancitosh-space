@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md bg-transparent navbar-top">
+	<div class="container">
+		<a class="navbar-brand" href="/">{{ .Site.Title }}</a>
+		<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+			data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kompetisi</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<!-- justify-content-end flex-grow-1 pe-3 -->
+				<ul class="navbar-nav ms-md-auto gap-md-2">
+					{{ range sort .Site.RegularPages "File.Path" }}
+						<li class="nav-item">
+							<a href="{{ .Permalink }}" class="nav-link" id="navbar-{{ .Params.url }}">{{ .LinkTitle }}</a>
+						</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
