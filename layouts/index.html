@@ -3,21 +3,54 @@
 {{ end }}
 
 {{ define "main" }}
-	<div class="hero d-flex align-items-center">
+	<div class="hero d-sm-flex align-items-sm-center">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-sm-9 col-md-9 col-lg-7 col-xl-6 col-xxl-5 offset-sm-3 offset-md-3 offset-lg-4 offset-xxl-3">
-					<h1 class="text-body-emphasis">MANCITOSH</h1>
+				<div class="col-12 col-sm-9 col-md-9 col-lg-7 col-xl-6 col-xxl-5 offset-sm-3 offset-md-3 offset-lg-4 offset-xxl-3 text-center text-sm-start">
+					<h1 class="text-body-emphasis">Bukan Zaman Dulu Lagi, Kita Anak Muda Berteknologi</h1>
 					<p class="lead">Madrasah Aliyah Negri 1 Ponorogo Competition Information Technology Olimpiade Science, Sosial, Speech.</p>
 					<a href="#" class="btn btn-warning rounded-pill px-3">Ayo Daftar!</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container py-5">
 		<div class="row">
+			<div class="col-xl-12 col-xxl-3 mb-4 mb-xxl-0">
+				<div class="d-flex flex-row gap-3 align-items-center mt-5 pt-5 justify-content-center justify-content-md-start">
+					<img src="/assets/img/osmanza.po.jpeg" class="rounded-circle lembaga">
+					<img src="/assets/img/man1ponorogo.jpeg" class="rounded-circle lembaga">
+					<div>Mempersembahkan</div>
+				</div>
+			</div>
+			<div class="col-xxl-9">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 row-cols-xxl-2 gy-4">
+					{{ range sort .Site.RegularPages "File.Path" }}
+						<div class="col">
+							<div class="card h-100 rounded-4 shadow-lg">
+								<div class="card-body">
+									<div class="pt-5 mt-5 mb-4">
+										<a href="{{ .Permalink }}" class="link-body-emphasis display-6 fw-bold lh-1 link-underline link-underline-opacity-0">{{ .Title }}</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "footer" }}
+	<div class="container">
+		<hr>
+		<div class="row mb-3">
 			<div class="col-xxl-6">
-				<h2>Selamat Bertanding</h2>
+				<h5>&copy; 2024 OSIM MANZAPO Prod.</h5>
+				<div>Sanggar MAN 1 Ponorogo</div>
+				<div>Jl. Arif Rahman Hakim No. 02</div>
+				<div>Desa Cekok, Kec. Babadan, Kab. Ponorogo</div>
 			</div>
 		</div>
 	</div>

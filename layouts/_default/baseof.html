@@ -17,10 +17,12 @@
 	{{ block "main" . }}
 		<!-- The part of the page that begins to differ between templates -->
 	{{ end }}
-
-	<footer class="mt-md-auto">
-		<div class="container py-3 text-body-secondary text-center">&copy; 2024 OSIM MAN 1 Ponorogo</div>
-	</footer>
+	
+	{{ block "footer" . }}
+		<footer class="mt-md-auto">
+			<div class="container py-3 text-body-secondary text-center">&copy; 2024 OSIM MAN 1 Ponorogo</div>
+		</footer>
+	{{ end }}
 
 	<script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
 	{{ block "javascript" . }}
