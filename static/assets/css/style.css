@@ -1,3 +1,9 @@
+@import url('../quicksand/quicksand.css');
+
+:root {
+    --bs-font-sans-serif: Quicksand, sans-serif;
+}
+
 @media(min-width: 768px) {
     html,
     body {
