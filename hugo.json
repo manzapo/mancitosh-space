@@ -4,5 +4,12 @@
     "params" : {
         "description" : "Halaman tidak resmi Mancitosh v8.0 (2024)"
     },
-    "title" : "Mancitosh 2024"
+    "title" : "Mancitosh 2024",
+    "markup": {
+        "goldmark": {
+            "renderer" : {
+                "unsafe" : true
+            }
+        }
+    }
 }

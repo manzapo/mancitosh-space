@@ -1,9 +1,9 @@
 ---
-date: 2024-01-26T21:53:48+07:00
-title: Lomba Vlog
-description: Ketentuan Lomba Vlog Mancitosh v8.0 Competition MAN 1 Ponorogo
-url : vlog
-linkTitle: Vlog
+date        : 2024-01-26T21:53:48+07:00
+title       : Lomba Vlog
+description : Ketentuan Lomba Vlog Mancitosh v8.0 Competition MAN 1 Ponorogo
+url         : vlog
+linkTitle   : Vlog
 ---
 
 #### Syarat Peserta
