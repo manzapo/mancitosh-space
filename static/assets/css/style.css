@@ -14,3 +14,41 @@
         flex-direction: column;
     }
 }
+
+/**
+ * Simple Vertical timeline
+ * https://bootsnipp.com/snippets/xrKXW
+ */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: var(--bs-warning-border-subtle);
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline>li {
+    margin-left: 20px;
+}
+
+ul.timeline>li:before {
+    content: ' ';
+    background-color: var(--bs-body-bg);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid var(--bs-warning-text-emphasis);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    margin-top: 3px;
+}

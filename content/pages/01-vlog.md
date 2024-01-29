@@ -44,3 +44,17 @@ unsplash    : 20dfXAV8AzQ
 
 #### Tanggal Penting
 
+<ul class="timeline">
+    <li>
+        <div class="fw-bold">Lorem, ipsum dolor.</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, explicabo.</p>
+    </li>
+    <li>
+        <div class="fw-bold">Lorem, ipsum dolor.</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, explicabo.</p>
+    </li>
+    <li>
+        <div class="fw-bold">Lorem, ipsum dolor.</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, explicabo.</p>
+    </li>
+</ul>
