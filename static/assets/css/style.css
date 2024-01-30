@@ -16,6 +16,14 @@
 }
 
 /**
+ * Fix svg icon alignment
+ */
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+/**
  * Simple Vertical timeline
  * https://bootsnipp.com/snippets/xrKXW
  */
@@ -26,7 +34,7 @@ ul.timeline {
 
 ul.timeline:before {
     content: ' ';
-    background: var(--bs-warning-border-subtle);
+    background: #198754;
     display: inline-block;
     position: absolute;
     left: 29px;

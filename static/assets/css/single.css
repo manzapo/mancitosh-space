@@ -1,0 +1,28 @@
+.bg-image-full {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    min-height: 320px;
+    margin-top: -56px;
+}
+@media(min-width: 768px) {
+    .bg-image-full {
+        min-height: 420px;
+    }
+}
+@media(min-width: 992px) {
+    .bg-image-full {
+        min-height: 510px;
+    }
+}
+@media(min-width: 1200px) {
+    .bg-image-full {
+        min-height: 590px;
+    }
+}
+@media(min-width: 1400px) {
+    .bg-image-full {
+        min-height: 807px;
+    }
+}
