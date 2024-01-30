@@ -1,11 +1,23 @@
+{{ define "stylesheet" }}
+	<link rel="stylesheet" href="/assets/css/single.css">
+{{ end }}
+
 {{ define "main" }}
+	<header class="bg-image-full d-flex align-items-center mb-5" style="background-image: url('https://source.unsplash.com/{{ .Params.unsplash }}/1920x807');">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-6">
+					<div class="text-center">
+						<h1>{{ .Page.Title }}</h1>
+						<p class="lead">{{ .Page.Params.description }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 	<div class="container mb-5">
 		<div class="row justify-content-center">
 			<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-6">
-				<div class="text-center border-top border-bottom my-5 pt-2">
-					<h1>{{ .Page.Title }}</h1>
-					<p class="lead">{{ .Page.Params.description }}</p>
-				</div>
 				{{ .Content }}
 			</div>
 		</div>
