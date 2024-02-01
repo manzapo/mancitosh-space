@@ -5,6 +5,7 @@
         "description" : "Halaman tidak resmi Mancitosh v8.0 (2024)"
     },
     "title" : "Mancitosh 2024",
+    "timeZone" : "Asia/Jakarta",
     "markup": {
         "goldmark": {
             "renderer" : {

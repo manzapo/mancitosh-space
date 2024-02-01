@@ -1,5 +1,6 @@
 ---
 date        : 2024-01-26T21:53:48+07:00
+lastmod     : 2024-02-01T20:50:41+07:00
 title       : Lomba Vlog
 description : Ketentuan Lomba Vlog Mancitosh v8.0 Competition MAN 1 Ponorogo
 url         : vlog

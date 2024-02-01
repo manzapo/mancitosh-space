@@ -32,6 +32,9 @@
 			<div class="row justify-content-center">
 				<div class="col-md-9 col-lg-7 col-xl-6 offset-lg-1 offset-xl-3">
 					{{ .Content }}
+					<div class="text-end text-body-secondary border-top py-2">
+						Laman diperbarui {{ time.Format "2" .Page.Params.lastmod }} {{ index .Site.Data.bulan (time.Format "1" .Page.Params.lastmod) }} {{ time.Format "2006" .Page.Params.lastmod }}
+					</div>
 				</div>
 				<div class="col-md-9 col-lg-3 col-xxl-2 offset-xxl-1 mt-sm-5 mt-lg-0">
 					<h5 class="mb-3">Pranala</h5>
@@ -46,6 +49,9 @@
 			<div class="row justify-content-center">
 				<div class="col-md-9 col-lg-7 col-xl-6">
 					{{ .Content }}
+					<div class="text-end text-body-secondary border-top py-2">
+						Laman diperbarui {{ time.Format "2" .Page.Params.lastmod }} {{ index .Site.Data.bulan (time.Format "1" .Page.Params.lastmod) }} {{ time.Format "2006" .Page.Params.lastmod }}
+					</div>
 				</div>
 			</div>
 		{{ end }}
