@@ -5,6 +5,15 @@ description : Ketentuan Lomba Vlog Mancitosh v8.0 Competition MAN 1 Ponorogo
 url         : vlog
 linkTitle   : Vlog
 unsplash    : 20dfXAV8AzQ
+pranala     :
+  - link  : https://forms.gle/E4NgGeN4X1Wr38ah7
+    title : Daftar
+  - link  : https://mancitosh.man1ponorogo.sch.id/vlog/JUKNIS-VLOG.pdf
+    title : Petunjuk Teknis
+  - link  : https://drive.google.com/file/d/1-3MoWI1lxVPDQSf9NnqHbZ5nm_spXBP7/view
+    title : Poster
+  - link  : https://twb.nz/mancitoshv8
+    title : Twibbon
 ---
 
 #### Syarat Peserta

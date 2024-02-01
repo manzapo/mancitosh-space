@@ -28,11 +28,27 @@
 		</div>
 	</header>
 	<div class="container mb-5">
-		<div class="row justify-content-center">
-			<div class="col-md-9 col-lg-7 col-xl-6">
-				{{ .Content }}
+		{{ if .Page.Params.pranala }}
+			<div class="row justify-content-center">
+				<div class="col-md-9 col-lg-7 col-xl-6 offset-lg-1 offset-xl-3">
+					{{ .Content }}
+				</div>
+				<div class="col-md-9 col-lg-3 col-xxl-2 offset-xxl-1 mt-sm-5 mt-lg-0">
+					<h5 class="mb-3">Pranala</h5>
+					<div class="list-group">
+						{{ range .Page.Params.pranala }}
+							<a href="{{ .link }}" target="_blank" rel="index, follow" class="list-group-item list-group-item-action">{{ .title }}</a>
+						{{ end }}
+					</div>
+				</div>
 			</div>
-		</div>
+		{{ else  }}
+			<div class="row justify-content-center">
+				<div class="col-md-9 col-lg-7 col-xl-6">
+					{{ .Content }}
+				</div>
+			</div>
+		{{ end }}
 	</div>
 {{ end }}
 
