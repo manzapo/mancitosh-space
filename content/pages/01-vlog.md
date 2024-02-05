@@ -70,7 +70,7 @@ pranala     :
     </li>
     <li class="mb-4">
         <div class="fw-bold">24 Februari 2024</div>
-        <p>Tahap Final dan Penganugerahan Peserta Lomba</p>
+        <p>Tahap Final dan penganugerahan peserta lomba</p>
         <a href="https://maps.app.goo.gl/x7miEgZQWk5VyAGv9" target="_blank" class="btn btn-outline-warning rounded-pill px-3"><svg class="bi me-2" width="1em" height="1em"><use href="#geo-alt-fill"></use></svg>MAN 1 Ponorogo</a>
     </li>
 </ul>
