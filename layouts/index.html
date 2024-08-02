@@ -54,7 +54,7 @@
 				<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 row-cols-xxl-2 gy-4">
 					{{ range sort .Site.RegularPages "File.Path" }}
 						<div class="col">
-							<div class="card h-100 rounded-4 shadow-lg card-cover" style="background-image: url('https://source.unsplash.com/{{ .Params.unsplash }}/471x471');">
+							<div class="card h-100 rounded-4 shadow-lg card-cover" style="background-image: url('/assets/img/{{ .Params.unsplash }}-471x471.jpg');">
 								<div class="card-body">
 									<div class="pt-5 mt-5 mb-4">
 										<a href="{{ .Permalink }}" class="link-body-emphasis display-6 fw-bold lh-1 link-underline link-underline-opacity-0 text-shadow">{{ .Title }}</a>
